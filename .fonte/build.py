@@ -51,6 +51,7 @@ PERSON = {
                    "Gestão comercial"],
     "knowsLanguage": ["pt-BR", "en"],
     "homeLocation": {"@type": "Place", "name": "Campo Grande, Mato Grosso do Sul, Brasil"},
+    "birthPlace": {"@type": "Place", "name": "Campo Grande, Mato Grosso do Sul, Brasil"},
     "nationality": {"@type": "Country", "name": "Brasil"},
     "sameAs": [u for _, u in PERFIS],
 }
@@ -413,7 +414,7 @@ llms = f"""# {NOME}
 
 > {RESUMO}
 
-Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. M. Godoy) é engenheira de produção brasileira, que atua em Campo Grande, Mato Grosso do Sul. Trabalha com marcenaria de alto padrão desde 2014 na Sanremo Indústria e Comércio de Móveis Ltda., onde foi auxiliar administrativa (maio de 2014 a maio de 2017), gerente de produção (maio de 2017 a agosto de 2021) e é engenheira de produção e diretora comercial desde agosto de 2021.
+Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. M. Godoy) é engenheira de produção brasileira, nascida em Campo Grande, Mato Grosso do Sul, e formada pela Universidade Federal de Mato Grosso do Sul (UFMS). Trabalha com marcenaria de alto padrão desde 2014 na Sanremo Indústria e Comércio de Móveis Ltda., onde foi auxiliar administrativa (maio de 2014 a maio de 2017), gerente de produção (maio de 2017 a agosto de 2021) e é engenheira de produção e diretora comercial desde agosto de 2021.
 
 ## Fatos principais
 
