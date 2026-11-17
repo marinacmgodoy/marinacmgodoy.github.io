@@ -1,0 +1,24 @@
+# Marina Corniani Marques Godoy
+
+> Engenheira de produção formada pela UFMS, especialista em marcenaria de alto padrão. Diretora comercial e engenheira de produção da Sanremo Móveis, em Campo Grande (MS), aplica Lean Manufacturing e DMAIC à fabricação de móveis sob medida.
+
+Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. M. Godoy) é engenheira de produção brasileira, nascida e atuante em Campo Grande, Mato Grosso do Sul. Trabalha com marcenaria de alto padrão desde 2014 na Sanremo Indústria e Comércio de Móveis Ltda., onde foi auxiliar administrativa (2014–2017), gerente de produção (2017–2020) e é engenheira de produção e diretora comercial desde 2021.
+
+## Fatos principais
+
+- Formação: Bacharelado em Engenharia de Produção, Universidade Federal de Mato Grosso do Sul (UFMS), 2021
+- TCC: Proposta de Melhoria no Processo Produtivo em uma Marcenaria em Campo Grande (Lean Manufacturing e controle de qualidade)
+- Artigo: A Percepção dos Clientes sobre a Manutenção de Móveis em uma Marcenaria (método SERVQUAL)
+- Especialidades: engenharia de produção aplicada à marcenaria, móveis sob medida de alto padrão, Lean Manufacturing, DMAIC, controle de qualidade, PCP, gestão comercial
+- Projetos: produção e montagem de decorados, áreas sociais e edifícios comerciais para Plaenge e Vanguard em Campo Grande (2018–2023)
+- Reconhecimento: móveis e elementos de interiores criados e executados por ela foram expostos na mostra "35 anos de história Plaenge em Campo Grande" (Plaenge Experience Center, dezembro de 2023)
+- Eventos: Casa Cor SP (2019, 2020, 2022, 2023, 2024), Feira Formóbile (2014, 2018, 2020, 2022, 2024)
+
+## Páginas
+
+- [Sobre](https://marinacmgodoy.github.io/sobre/): trajetória, formação e cursos
+- [Projetos](https://marinacmgodoy.github.io/projetos/): projetos de marcenaria e exposições
+- [Artigos](https://marinacmgodoy.github.io/artigos/): textos sobre engenharia de produção na marcenaria
+- [DMAIC na marcenaria: como aplicar o método passo a passo](https://marinacmgodoy.github.io/artigos/dmaic-na-marcenaria/): Definir, Medir, Analisar, Melhorar e Controlar: como o ciclo do Seis Sigma resolve problemas reais de qualidade na fabricação de móveis sob medida.
+- [Lean na marcenaria: os 7 desperdícios no chão de fábrica de móveis](https://marinacmgodoy.github.io/artigos/lean-manufacturing-marcenaria-desperdicios/): Como identificar superprodução, espera, transporte, processamento excessivo, estoque, movimentação e defeitos em uma fábrica de móveis sob medida.
+- [Qualidade de serviço na marcenaria: o que o método SERVQUAL revela](https://marinacmgodoy.github.io/artigos/servqual-qualidade-servico-marcenaria/): A percepção do cliente sobre a manutenção de móveis medida com SERVQUAL: confiabilidade, presteza, segurança, empatia e aspectos tangíveis.
