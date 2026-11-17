@@ -278,16 +278,16 @@ sobre = f"""
 <h1>Marina Corniani Marques Godoy</h1>
 <p class="lead">Engenheira de produção, especialista em marcenaria de alto padrão e diretora comercial da Sanremo Indústria e Comércio de Móveis, em Campo Grande, Mato Grosso do Sul.</p>
 
-<p>Comecei na marcenaria em 2014, na área administrativa, elaborando orçamentos de projetos, cuidando de contratos e controlando o estoque de matérias-primas. Foi ali que montei meu primeiro sistema de verificação de qualidade, com auditorias periódicas nos processos.</p>
-<p>Entre 2017 e 2020 fui gerente de produção. Planejava a alocação de pessoas e materiais, acompanhava a montagem e o acabamento dos móveis e implantei o controle de qualidade em cada etapa da fábrica. Nesse período acompanhei a produção e a montagem de decorados e áreas sociais de empreendimentos da Plaenge, uma das maiores construtoras do país.</p>
+<p>Comecei na marcenaria em maio de 2014, na área administrativa, elaborando orçamentos de projetos, cuidando de contratos e controlando o estoque de matérias-primas. Foi ali que montei meu primeiro sistema de verificação de qualidade, com auditorias periódicas nos processos.</p>
+<p>Entre maio de 2017 e agosto de 2021 fui gerente de produção. Planejava a alocação de pessoas e materiais, acompanhava a montagem e o acabamento dos móveis e implantei o controle de qualidade em cada etapa da fábrica. Nesse período acompanhei a produção e a montagem de decorados e áreas sociais de empreendimentos da Plaenge, uma das maiores construtoras do país.</p>
 <p>Em 2021 concluí a graduação em Engenharia de Produção na Universidade Federal de Mato Grosso do Sul (UFMS). Meu trabalho de conclusão de curso foi uma proposta de melhoria no processo produtivo de uma marcenaria em Campo Grande, com base em Lean Manufacturing e ferramentas de controle de qualidade, e resultou em ganhos de eficiência e redução de desperdícios.</p>
-<p>Desde 2021 sou engenheira de produção e diretora comercial da Sanremo. Coordeno a equipe de vendas, desenvolvo a estratégia comercial para o mercado de móveis de alto padrão e acompanho o ciclo de cada produto, da concepção do projeto à entrega ao cliente.</p>
+<p>Desde agosto de 2021 sou engenheira de produção e diretora comercial da Sanremo. Coordeno a equipe de vendas, desenvolvo a estratégia comercial para o mercado de móveis de alto padrão e acompanho o ciclo de cada produto, da concepção do projeto à entrega ao cliente.</p>
 
 <h2>Experiência profissional</h2>
 <ol class="linha-tempo">
-<li><p class="mono">2021 – atual</p><h3>Engenheira de Produção e Diretora Comercial</h3><p>Sanremo Indústria e Comércio de Móveis Ltda. · Campo Grande, MS</p></li>
-<li><p class="mono">2017 – 2020</p><h3>Gerente de Produção</h3><p>Sanremo Indústria e Comércio de Móveis Ltda.</p></li>
-<li><p class="mono">2014 – 2017</p><h3>Auxiliar Administrativo</h3><p>Sanremo Indústria e Comércio de Móveis Ltda.</p></li>
+<li><p class="mono">ago/2021 – atual</p><h3>Engenheira de Produção e Diretora Comercial</h3><p>Sanremo Indústria e Comércio de Móveis Ltda. · Campo Grande, MS</p></li>
+<li><p class="mono">mai/2017 – ago/2021</p><h3>Gerente de Produção</h3><p>Sanremo Indústria e Comércio de Móveis Ltda.</p></li>
+<li><p class="mono">mai/2014 – mai/2017</p><h3>Auxiliar Administrativo</h3><p>Sanremo Indústria e Comércio de Móveis Ltda.</p></li>
 </ol>
 
 <h2>Formação</h2>
@@ -412,7 +412,7 @@ llms = f"""# {NOME}
 
 > {RESUMO}
 
-Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. M. Godoy) é engenheira de produção brasileira, nascida e atuante em Campo Grande, Mato Grosso do Sul. Trabalha com marcenaria de alto padrão desde 2014 na Sanremo Indústria e Comércio de Móveis Ltda., onde foi auxiliar administrativa (2014–2017), gerente de produção (2017–2020) e é engenheira de produção e diretora comercial desde 2021.
+Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. M. Godoy) é engenheira de produção brasileira, que atua em Campo Grande, Mato Grosso do Sul. Trabalha com marcenaria de alto padrão desde 2014 na Sanremo Indústria e Comércio de Móveis Ltda., onde foi auxiliar administrativa (maio de 2014 a maio de 2017), gerente de produção (maio de 2017 a agosto de 2021) e é engenheira de produção e diretora comercial desde agosto de 2021.
 
 ## Fatos principais
 
