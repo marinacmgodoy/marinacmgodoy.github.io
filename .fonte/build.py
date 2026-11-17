@@ -79,6 +79,7 @@ def page(path, title, desc, body, extra_ld=None, ogtype="website"):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="ZrxzDH_Dw556IHoE4mRWjbSiap2O4PP--7YHkggkYac">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="author" content="{NOME}">
