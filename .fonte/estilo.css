@@ -117,3 +117,11 @@ h3 { font-size: 1.15rem; font-weight: 700; }
   .colunas { grid-template-columns: 1fr; gap: 28px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+.ficha { margin: 28px 0; display: grid; gap: 0; border-top: 1px solid var(--linha); }
+.ficha > div { display: grid; grid-template-columns: 8em minmax(0, 1fr); gap: 16px; padding-block: 10px; border-bottom: 1px solid var(--linha); }
+.ficha dt { font: .75rem var(--mono); text-transform: uppercase; letter-spacing: .1em; color: var(--tinta-2); padding-top: 3px; }
+.ficha dd { margin: 0; }
+.livro-destaque { border-left: 3px solid var(--nogueira); padding-left: max(20px, env(safe-area-inset-left, 0px)); }
+.livro-destaque h2 { margin-bottom: 10px; }
+.livro-destaque p { max-width: 68ch; color: var(--tinta-2); margin: 0 0 10px; }

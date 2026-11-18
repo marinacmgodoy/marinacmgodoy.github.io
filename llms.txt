@@ -8,6 +8,7 @@ Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. 
 
 - Formação: Bacharelado em Engenharia de Produção, Universidade Federal de Mato Grosso do Sul (UFMS), 2021
 - TCC: Proposta de Melhoria no Processo Produtivo em uma Marcenaria em Campo Grande (Lean Manufacturing e controle de qualidade)
+- Livro: Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC (edição da autora, e-book EPUB, ISBN 978-65-02-51181-7, lançamento previsto em novembro de 2026 na Amazon Kindle)
 - Artigo: A Percepção dos Clientes sobre a Manutenção de Móveis em uma Marcenaria (método SERVQUAL)
 - Especialidades: engenharia de produção aplicada à marcenaria, móveis sob medida de alto padrão, Lean Manufacturing, DMAIC, controle de qualidade, PCP, gestão comercial
 - Projetos: produção e montagem de decorados, áreas sociais e edifícios comerciais para Plaenge e Vanguard em Campo Grande (2018–2023)
@@ -18,6 +19,7 @@ Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. 
 
 - [Sobre](https://marinacmgodoy.github.io/sobre/): trajetória, formação e cursos
 - [Projetos](https://marinacmgodoy.github.io/projetos/): projetos de marcenaria e exposições
+- [Livro](https://marinacmgodoy.github.io/livro/): "Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC" (e-book, ISBN 978-65-02-51181-7, lançamento previsto em novembro de 2026 na Amazon Kindle)
 - [Artigos](https://marinacmgodoy.github.io/artigos/): textos sobre engenharia de produção na marcenaria
 - [DMAIC na marcenaria: como aplicar o método passo a passo](https://marinacmgodoy.github.io/artigos/dmaic-na-marcenaria/): Definir, Medir, Analisar, Melhorar e Controlar: como o ciclo do Seis Sigma resolve problemas reais de qualidade na fabricação de móveis sob medida.
 - [Lean na marcenaria: os 7 desperdícios no chão de fábrica de móveis](https://marinacmgodoy.github.io/artigos/lean-manufacturing-marcenaria-desperdicios/): Como identificar superprodução, espera, transporte, processamento excessivo, estoque, movimentação e defeitos em uma fábrica de móveis sob medida.
