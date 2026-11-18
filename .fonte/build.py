@@ -21,7 +21,8 @@ PERFIS = [
     # ("Instagram", "https://www.instagram.com/..."),
 ]
 
-HOJE = "2026-11-11"
+HOJE = "2026-11-18"
+HOJE_ISO = HOJE + "T08:00:00-04:00"  # schema.org exige data e hora com fuso
 
 PERSON = {
     "@type": "Person",
@@ -272,7 +273,7 @@ page("/", f"{NOME} · Engenheira de Produção e Marcenaria",
      "Site oficial de Marina Corniani Marques Godoy (Marina Godoy), engenheira de produção (UFMS) especialista em marcenaria de alto padrão, Lean Seis Sigma e DMAIC. Campo Grande, MS.",
      home, extra_ld=[{"@type": "ProfilePage", "@id": f"{BASE}/#perfil", "url": f"{BASE}/",
                       "name": NOME, "inLanguage": "pt-BR", "mainEntity": {"@id": f"{BASE}/#marina"},
-                      "dateModified": HOJE}])
+                      "dateModified": HOJE_ISO}])
 
 sobre = f"""
 <article class="faixa texto">
@@ -378,7 +379,7 @@ for a in ARTIGOS:
 </article>"""
     page(path, f"{a['titulo']} · Marina Godoy", a["resumo"], body, ogtype="article", extra_ld=[{
         "@type": "BlogPosting", "headline": a["titulo"], "description": a["resumo"], "url": BASE + path,
-        "datePublished": a["data"], "dateModified": a["data"], "inLanguage": "pt-BR", "keywords": a["tags"],
+        "datePublished": a["data"] + "T09:00:00-04:00", "dateModified": HOJE_ISO, "inLanguage": "pt-BR", "keywords": a["tags"],
         "author": {"@id": f"{BASE}/#marina"}, "publisher": {"@id": f"{BASE}/#marina"},
         "image": f"{BASE}/img/marina.jpg", "mainEntityOfPage": BASE + path}])
 
