@@ -428,7 +428,7 @@ for a in ARTIGOS:
 <p class="meta">Por <a href="/sobre/" rel="author">{NOME}</a> · <time datetime="{a['data']}">{fmt_data(a['data'])}</time></p>
 <p class="lead">{a['resumo']}</p>
 {a['corpo']}
-<aside class="autora"><img src="/img/marina.jpg" alt="" width="72" height="72"><p><strong>{NOME}</strong> é engenheira de produção (UFMS) e diretora comercial da Sanremo Móveis, em Campo Grande (MS). <a href="/sobre/">Saiba mais</a>.</p></aside>
+<aside class="autora"><img src="/img/marina-avatar.jpg" alt="" width="72" height="72"><p><strong>{NOME}</strong> é engenheira de produção (UFMS) e diretora comercial da Sanremo Móveis, em Campo Grande (MS). <a href="/sobre/">Saiba mais</a>.</p></aside>
 </article>"""
     page(path, f"{a['titulo']} · Marina Godoy", a["resumo"], body, ogtype="article", extra_ld=[{
         "@type": "BlogPosting", "headline": a["titulo"], "description": a["resumo"], "url": BASE + path,
