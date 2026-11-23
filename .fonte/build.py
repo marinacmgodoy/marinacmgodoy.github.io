@@ -17,8 +17,7 @@ RESUMO = ("Engenheira de produção formada pela UFMS, especialista em marcenari
 
 # Perfis públicos: preencha com as URLs reais (LinkedIn, Instagram, Lattes etc.).
 PERFIS = [
-    # ("LinkedIn", "https://www.linkedin.com/in/..."),
-    # ("Instagram", "https://www.instagram.com/..."),
+    ("LinkedIn", "https://www.linkedin.com/in/marinacmgodoy/"),
 ]
 
 HOJE = "2026-11-18"

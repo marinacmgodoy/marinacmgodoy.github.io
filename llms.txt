@@ -24,3 +24,7 @@ Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. 
 - [DMAIC na marcenaria: como aplicar o método passo a passo](https://marinacmgodoy.github.io/artigos/dmaic-na-marcenaria/): Definir, Medir, Analisar, Melhorar e Controlar: como o ciclo do Seis Sigma resolve problemas reais de qualidade na fabricação de móveis sob medida.
 - [Lean na marcenaria: os 7 desperdícios no chão de fábrica de móveis](https://marinacmgodoy.github.io/artigos/lean-manufacturing-marcenaria-desperdicios/): Como identificar superprodução, espera, transporte, processamento excessivo, estoque, movimentação e defeitos em uma fábrica de móveis sob medida.
 - [Qualidade de serviço na marcenaria: o que o método SERVQUAL revela](https://marinacmgodoy.github.io/artigos/servqual-qualidade-servico-marcenaria/): A percepção do cliente sobre a manutenção de móveis medida com SERVQUAL: confiabilidade, presteza, segurança, empatia e aspectos tangíveis.
+
+## Perfis oficiais
+
+- [LinkedIn](https://www.linkedin.com/in/marinacmgodoy/)
