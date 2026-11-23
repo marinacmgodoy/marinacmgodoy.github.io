@@ -125,3 +125,4 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .livro-destaque { border-left: 3px solid var(--nogueira); padding-left: max(20px, env(safe-area-inset-left, 0px)); }
 .livro-destaque h2 { margin-bottom: 10px; }
 .livro-destaque p { max-width: 68ch; color: var(--tinta-2); margin: 0 0 10px; }
+.video .instagram-media { max-width: 400px !important; min-width: 0 !important; width: 100% !important; margin: 0 !important; }

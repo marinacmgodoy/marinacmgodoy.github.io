@@ -274,6 +274,12 @@ home = f"""
 <p><a class="link" href="/livro/">Conheça o livro</a></p>
 </section>
 
+<section class="faixa bloco video">
+<h2>Vídeo</h2>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DU-3hFLjW6-/" data-instgrm-version="14"><p><a href="https://www.instagram.com/reel/DU-3hFLjW6-/" rel="noopener" target="_blank">Assista no Instagram</a></p></blockquote>
+<script async src="https://www.instagram.com/embed.js"></script>
+</section>
+
 <section class="faixa bloco">
 <div class="titulo-secao"><h2>Artigos recentes</h2><a class="link" href="/artigos/">Todos os artigos</a></div>
 <ul class="lista-artigos">{lista_artigos(ARTIGOS)}</ul>
