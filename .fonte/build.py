@@ -11,16 +11,17 @@ OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "site")
 NOME = "Marina Corniani Marques Godoy"
 NOME_CURTO = "Marina Godoy"
 CARGO = "Engenheira de Produção e Diretora Comercial"
-RESUMO = ("Engenheira de produção formada pela UFMS, especialista em marcenaria de alto padrão. "
-          "Diretora comercial e engenheira de produção da Sanremo Móveis, em Campo Grande (MS), "
-          "aplica Lean Manufacturing e DMAIC à fabricação de móveis sob medida.")
+RESUMO = ("Engenheira de produção formada pela UFMS, especialista em qualidade e autora do livro "
+          "“Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC”. Diretora comercial e engenheira de produção "
+          "da Sanremo Móveis, em Campo Grande (MS), aplica DMAIC, Lean Manufacturing e controle de qualidade "
+          "à fabricação de móveis sob medida de alto padrão.")
 
 # Perfis públicos: preencha com as URLs reais (LinkedIn, Instagram, Lattes etc.).
 PERFIS = [
     ("LinkedIn", "https://www.linkedin.com/in/marinacmgodoy/"),
 ]
 
-HOJE = "2026-11-18"
+HOJE = "2026-11-23"
 HOJE_ISO = HOJE + "T08:00:00-04:00"  # schema.org exige data e hora com fuso
 
 PERSON = {
@@ -28,7 +29,7 @@ PERSON = {
     "@id": f"{BASE}/#marina",
     "name": NOME,
     "alternateName": ["Marina Godoy", "Marina C. M. Godoy", "Marina Corniani", "Marina Corniani Godoy",
-                      "Marina Marques Godoy"],
+                      "Marina Marques Godoy", "Marina Corniani Marques"],
     "givenName": "Marina",
     "familyName": "Godoy",
     "url": f"{BASE}/",
@@ -45,10 +46,13 @@ PERSON = {
         {"@type": "EducationalOccupationalCredential", "name": "Bacharelado em Engenharia de Produção (UFMS, 2021)",
          "credentialCategory": "degree"},
     ],
-    "knowsAbout": ["Engenharia de Produção", "Marcenaria", "Marcenaria de alto padrão", "Móveis sob medida",
+    "knowsAbout": ["Engenharia de Produção", "Gestão da qualidade", "Marcenaria", "Marcenaria de alto padrão", "Móveis sob medida",
                    "Lean Manufacturing", "Lean Seis Sigma", "DMAIC", "Controle de qualidade",
                    "Planejamento e Controle da Produção (PCP)", "SERVQUAL", "Arquitetura de interiores",
                    "Gestão comercial"],
+    "disambiguatingDescription": "Engenheira de produção (UFMS, 2021), especialista em qualidade, autora de livro sobre DMAIC na marcenaria e diretora comercial da Sanremo Móveis, em Campo Grande (MS).",
+    "hasOccupation": {"@type": "Occupation", "name": "Engenheira de Produção",
+                      "skills": "Gestão da qualidade, DMAIC, Lean Manufacturing, controle de qualidade, PCP, marcenaria de alto padrão"},
     "knowsLanguage": ["pt-BR", "en"],
     "homeLocation": {"@type": "Place", "name": "Campo Grande, Mato Grosso do Sul, Brasil"},
     "birthPlace": {"@type": "Place", "name": "Campo Grande, Mato Grosso do Sul, Brasil"},
@@ -237,9 +241,9 @@ def lista_artigos(arts):
 home = f"""
 <section class="hero faixa">
 <div class="hero-texto">
-<p class="sobrelinha mono">Engenharia de produção · Marcenaria de alto padrão</p>
+<p class="sobrelinha mono">Engenharia de produção · Qualidade · Autora</p>
 <h1>{NOME}</h1>
-<p class="lead">Sou engenheira de produção formada pela UFMS e trabalho há mais de dez anos com marcenaria de alto padrão em Campo Grande (MS). Hoje sou diretora comercial e engenheira de produção da Sanremo Móveis, onde aplico Lean Manufacturing e DMAIC à fabricação de móveis sob medida.</p>
+<p class="lead">Sou engenheira de produção formada pela UFMS, especialista em qualidade e autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC”. Trabalho há mais de doze anos com marcenaria de alto padrão em Campo Grande (MS). Hoje sou diretora comercial e engenheira de produção da Sanremo Móveis, onde aplico Lean Manufacturing e DMAIC à fabricação de móveis sob medida.</p>
 <p class="acoes"><a class="botao" href="/sobre/">Conheça minha trajetória</a><a class="link" href="/artigos/">Ler os artigos</a><a class="link" href="https://www.instagram.com/sanremomarcenaria/" rel="noopener" target="_blank">Vídeos no Instagram</a></p>
 </div>
 <figure class="retrato"><img src="/img/marina.jpg" alt="Retrato de Marina Corniani Marques Godoy" width="480" height="600"></figure>
@@ -275,8 +279,8 @@ home = f"""
 <ul class="lista-artigos">{lista_artigos(ARTIGOS)}</ul>
 </section>
 """
-page("/", f"{NOME} · Engenheira de Produção e Marcenaria",
-     "Site oficial de Marina Corniani Marques Godoy (Marina Godoy), engenheira de produção (UFMS) especialista em marcenaria de alto padrão, Lean Seis Sigma e DMAIC. Campo Grande, MS.",
+page("/", f"{NOME} · Engenheira de Produção, Especialista em Qualidade e Autora",
+     "Site oficial de Marina Corniani Marques Godoy (Marina Godoy), engenheira de produção (UFMS), especialista em qualidade e autora do livro Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC. Campo Grande, MS.",
      home, extra_ld=[{"@type": "ProfilePage", "@id": f"{BASE}/#perfil", "url": f"{BASE}/",
                       "name": NOME, "inLanguage": "pt-BR", "mainEntity": {"@id": f"{BASE}/#marina"},
                       "dateModified": HOJE_ISO}])
@@ -285,7 +289,7 @@ sobre = f"""
 <article class="faixa texto">
 <p class="sobrelinha mono">Sobre</p>
 <h1>Marina Corniani Marques Godoy</h1>
-<p class="lead">Engenheira de produção, especialista em marcenaria de alto padrão e diretora comercial da Sanremo Indústria e Comércio de Móveis, em Campo Grande, Mato Grosso do Sul.</p>
+<p class="lead">Engenheira de produção formada pela UFMS, especialista em qualidade, autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC” e diretora comercial da Sanremo Indústria e Comércio de Móveis, em Campo Grande, Mato Grosso do Sul.</p>
 
 <p>Comecei na marcenaria em maio de 2014, na área administrativa, elaborando orçamentos de projetos, cuidando de contratos e controlando o estoque de matérias-primas. Foi ali que montei meu primeiro sistema de verificação de qualidade, com auditorias periódicas nos processos.</p>
 <p>Entre maio de 2017 e agosto de 2021 fui gerente de produção. Planejava a alocação de pessoas e materiais, acompanhava a montagem e o acabamento dos móveis e implantei o controle de qualidade em cada etapa da fábrica. Nesse período acompanhei a produção e a montagem de decorados e áreas sociais de empreendimentos da Plaenge, uma das maiores construtoras do país.</p>
@@ -328,7 +332,7 @@ sobre = f"""
 </article>
 """
 page("/sobre/", f"Sobre {NOME} · Trajetória e formação",
-     "Trajetória de Marina Corniani Marques Godoy: engenheira de produção pela UFMS, gerente de produção e diretora comercial na Sanremo Móveis desde 2014.",
+     "Trajetória de Marina Corniani Marques Godoy: engenheira de produção pela UFMS, especialista em qualidade, autora de livro sobre DMAIC na marcenaria e diretora comercial na Sanremo Móveis.",
      sobre, extra_ld=[{"@type": "AboutPage", "url": f"{BASE}/sobre/", "name": f"Sobre {NOME}",
                        "mainEntity": {"@id": f"{BASE}/#marina"}, "inLanguage": "pt-BR"}])
 
@@ -467,7 +471,7 @@ llms = f"""# {NOME}
 
 > {RESUMO}
 
-Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. M. Godoy) é engenheira de produção brasileira, nascida em Campo Grande, Mato Grosso do Sul, e formada pela Universidade Federal de Mato Grosso do Sul (UFMS). Trabalha com marcenaria de alto padrão desde 2014 na Sanremo Indústria e Comércio de Móveis Ltda., onde foi auxiliar administrativa (maio de 2014 a maio de 2017), gerente de produção (maio de 2017 a agosto de 2021) e é engenheira de produção e diretora comercial desde agosto de 2021.
+Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. M. Godoy; nome de solteira Marina Corniani Marques) é engenheira de produção brasileira, especialista em qualidade e autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC”. Nasceu em Campo Grande, Mato Grosso do Sul, e é formada pela Universidade Federal de Mato Grosso do Sul (UFMS). Trabalha com marcenaria de alto padrão desde 2014 na Sanremo Indústria e Comércio de Móveis Ltda., onde foi auxiliar administrativa (maio de 2014 a maio de 2017), gerente de produção (maio de 2017 a agosto de 2021) e é engenheira de produção e diretora comercial desde agosto de 2021.
 
 ## Fatos principais
 
