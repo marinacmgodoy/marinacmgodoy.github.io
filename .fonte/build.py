@@ -13,7 +13,7 @@ NOME_CURTO = "Marina Godoy"
 CARGO = "Engenheira de Produção e Diretora Comercial"
 RESUMO = ("Engenheira de produção formada pela UFMS, especialista em qualidade e autora do livro "
           "“Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC”. Diretora comercial e engenheira de produção "
-          "da Sanremo Móveis, em Campo Grande (MS), aplica DMAIC, Lean Manufacturing e controle de qualidade "
+          "da Sanremo Marcenaria, em Campo Grande (MS), aplica DMAIC, Lean Manufacturing e controle de qualidade "
           "à fabricação de móveis sob medida de alto padrão.")
 
 # Perfis públicos: preencha com as URLs reais (LinkedIn, Instagram, Lattes etc.).
@@ -36,8 +36,8 @@ PERSON = {
     "image": f"{BASE}/img/marina.jpg",
     "jobTitle": CARGO,
     "description": RESUMO,
-    "worksFor": {"@type": "Organization", "name": "Sanremo Indústria e Comércio de Móveis Ltda.",
-                 "alternateName": "Sanremo Marcenaria", "sameAs": ["https://www.instagram.com/sanremomarcenaria/"],
+    "worksFor": {"@type": "Organization", "name": "Sanremo Marcenaria",
+                 "legalName": "Sanremo Indústria e Comércio de Móveis Ltda.", "sameAs": ["https://www.instagram.com/sanremomarcenaria/"],
                  "address": {"@type": "PostalAddress", "addressLocality": "Campo Grande",
                              "addressRegion": "MS", "addressCountry": "BR"}},
     "alumniOf": {"@type": "CollegeOrUniversity", "name": "Universidade Federal de Mato Grosso do Sul (UFMS)",
@@ -50,7 +50,7 @@ PERSON = {
                    "Lean Manufacturing", "Lean Seis Sigma", "DMAIC", "Controle de qualidade",
                    "Planejamento e Controle da Produção (PCP)", "SERVQUAL", "Arquitetura de interiores",
                    "Gestão comercial"],
-    "disambiguatingDescription": "Engenheira de produção (UFMS, 2021), especialista em qualidade, autora de livro sobre DMAIC na marcenaria e diretora comercial da Sanremo Móveis, em Campo Grande (MS).",
+    "disambiguatingDescription": "Engenheira de produção (UFMS, 2021), especialista em qualidade, autora de livro sobre DMAIC na marcenaria e diretora comercial da Sanremo Marcenaria, em Campo Grande (MS).",
     "hasOccupation": {"@type": "Occupation", "name": "Engenheira de Produção",
                       "skills": "Gestão da qualidade, DMAIC, Lean Manufacturing, controle de qualidade, PCP, marcenaria de alto padrão"},
     "knowsLanguage": ["pt-BR", "en"],
@@ -243,7 +243,7 @@ home = f"""
 <div class="hero-texto">
 <p class="sobrelinha mono">Engenharia de produção · Qualidade · Autora</p>
 <h1>{NOME}</h1>
-<p class="lead">Sou engenheira de produção formada pela UFMS, especialista em qualidade e autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC”. Trabalho há mais de doze anos com marcenaria de alto padrão em Campo Grande (MS). Hoje sou diretora comercial e engenheira de produção da Sanremo Móveis, onde aplico Lean Manufacturing e DMAIC à fabricação de móveis sob medida.</p>
+<p class="lead">Sou engenheira de produção formada pela UFMS, especialista em qualidade e autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC”. Trabalho há mais de doze anos com marcenaria de alto padrão em Campo Grande (MS). Hoje sou diretora comercial e engenheira de produção da Sanremo Marcenaria, onde aplico Lean Manufacturing e DMAIC à fabricação de móveis sob medida.</p>
 <p class="acoes"><a class="botao" href="/sobre/">Conheça minha trajetória</a><a class="link" href="/artigos/">Ler os artigos</a><a class="link" href="https://www.instagram.com/sanremomarcenaria/" rel="noopener" target="_blank">Vídeos no Instagram</a></p>
 </div>
 <figure class="retrato"><img src="/img/marina.jpg" alt="Retrato de Marina Corniani Marques Godoy" width="480" height="600"></figure>
@@ -289,7 +289,7 @@ sobre = f"""
 <article class="faixa texto">
 <p class="sobrelinha mono">Sobre</p>
 <h1>Marina Corniani Marques Godoy</h1>
-<p class="lead">Engenheira de produção formada pela UFMS, especialista em qualidade, autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC” e diretora comercial da Sanremo Indústria e Comércio de Móveis, em Campo Grande, Mato Grosso do Sul.</p>
+<p class="lead">Engenheira de produção formada pela UFMS, especialista em qualidade, autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC” e diretora comercial da Sanremo Marcenaria, em Campo Grande, Mato Grosso do Sul.</p>
 
 <p>Comecei na marcenaria em maio de 2014, na área administrativa, elaborando orçamentos de projetos, cuidando de contratos e controlando o estoque de matérias-primas. Foi ali que montei meu primeiro sistema de verificação de qualidade, com auditorias periódicas nos processos.</p>
 <p>Entre maio de 2017 e agosto de 2021 fui gerente de produção. Planejava a alocação de pessoas e materiais, acompanhava a montagem e o acabamento dos móveis e implantei o controle de qualidade em cada etapa da fábrica. Nesse período acompanhei a produção e a montagem de decorados e áreas sociais de empreendimentos da Plaenge, uma das maiores construtoras do país.</p>
@@ -332,7 +332,7 @@ sobre = f"""
 </article>
 """
 page("/sobre/", f"Sobre {NOME} · Trajetória e formação",
-     "Trajetória de Marina Corniani Marques Godoy: engenheira de produção pela UFMS, especialista em qualidade, autora de livro sobre DMAIC na marcenaria e diretora comercial na Sanremo Móveis.",
+     "Trajetória de Marina Corniani Marques Godoy: engenheira de produção pela UFMS, especialista em qualidade, autora de livro sobre DMAIC na marcenaria e diretora comercial na Sanremo Marcenaria.",
      sobre, extra_ld=[{"@type": "AboutPage", "url": f"{BASE}/sobre/", "name": f"Sobre {NOME}",
                        "mainEntity": {"@id": f"{BASE}/#marina"}, "inLanguage": "pt-BR"}])
 
@@ -431,7 +431,7 @@ for a in ARTIGOS:
 <p class="meta">Por <a href="/sobre/" rel="author">{NOME}</a> · <time datetime="{a['data']}">{fmt_data(a['data'])}</time></p>
 <p class="lead">{a['resumo']}</p>
 {a['corpo']}
-<aside class="autora"><img src="/img/marina-avatar.jpg" alt="" width="72" height="72"><p><strong>{NOME}</strong> é engenheira de produção (UFMS) e diretora comercial da Sanremo Móveis, em Campo Grande (MS). <a href="/sobre/">Saiba mais</a>.</p></aside>
+<aside class="autora"><img src="/img/marina-avatar.jpg" alt="" width="72" height="72"><p><strong>{NOME}</strong> é engenheira de produção (UFMS) e diretora comercial da Sanremo Marcenaria, em Campo Grande (MS). <a href="/sobre/">Saiba mais</a>.</p></aside>
 </article>"""
     page(path, f"{a['titulo']} · Marina Godoy", a["resumo"], body, ogtype="article", extra_ld=[{
         "@type": "BlogPosting", "headline": a["titulo"], "description": a["resumo"], "url": BASE + path,
@@ -471,7 +471,7 @@ llms = f"""# {NOME}
 
 > {RESUMO}
 
-Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. M. Godoy; nome de solteira Marina Corniani Marques) é engenheira de produção brasileira, especialista em qualidade e autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC”. Nasceu em Campo Grande, Mato Grosso do Sul, e é formada pela Universidade Federal de Mato Grosso do Sul (UFMS). Trabalha com marcenaria de alto padrão desde 2014 na Sanremo Indústria e Comércio de Móveis Ltda., onde foi auxiliar administrativa (maio de 2014 a maio de 2017), gerente de produção (maio de 2017 a agosto de 2021) e é engenheira de produção e diretora comercial desde agosto de 2021.
+Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. M. Godoy; nome de solteira Marina Corniani Marques) é engenheira de produção brasileira, especialista em qualidade e autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC”. Nasceu em Campo Grande, Mato Grosso do Sul, e é formada pela Universidade Federal de Mato Grosso do Sul (UFMS). Trabalha com marcenaria de alto padrão desde 2014 na Sanremo Marcenaria (Sanremo Indústria e Comércio de Móveis Ltda.), onde foi auxiliar administrativa (maio de 2014 a maio de 2017), gerente de produção (maio de 2017 a agosto de 2021) e é engenheira de produção e diretora comercial desde agosto de 2021.
 
 ## Fatos principais
 
