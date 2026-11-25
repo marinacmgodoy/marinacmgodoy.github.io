@@ -21,7 +21,7 @@ PERFIS = [
     ("LinkedIn", "https://www.linkedin.com/in/marinacmgodoy/"),
 ]
 
-HOJE = "2026-11-23"
+HOJE = "2026-11-25"
 HOJE_ISO = HOJE + "T08:00:00-04:00"  # schema.org exige data e hora com fuso
 
 PERSON = {
@@ -33,7 +33,7 @@ PERSON = {
     "givenName": "Marina",
     "familyName": "Godoy",
     "url": f"{BASE}/",
-    "image": f"{BASE}/img/marina.jpg",
+    "image": f"{BASE}/img/marina-corniani-marques-godoy.jpg",
     "jobTitle": CARGO,
     "description": RESUMO,
     "worksFor": {"@type": "Organization", "name": "Sanremo Marcenaria",
@@ -96,7 +96,7 @@ def page(path, title, desc, body, extra_ld=None, ogtype="website"):
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{BASE}/img/marina.jpg">
+<meta property="og:image" content="{BASE}/img/marina-corniani-marques-godoy.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -261,7 +261,7 @@ home = f"""
 <p class="lead">Sou engenheira de produção formada pela UFMS, especialista em qualidade e autora do livro “Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC”. Trabalho há mais de doze anos com marcenaria de alto padrão em Campo Grande (MS). Hoje sou diretora comercial e engenheira de produção da Sanremo Marcenaria, onde aplico Lean Manufacturing e DMAIC à fabricação de móveis sob medida.</p>
 <p class="acoes"><a class="botao" href="/sobre/">Conheça minha trajetória</a><a class="link" href="/artigos/">Ler os artigos</a><a class="link" href="https://www.instagram.com/sanremomarcenaria/" rel="noopener" target="_blank">Vídeos no Instagram</a></p>
 </div>
-<figure class="retrato"><img src="/img/marina.jpg" alt="Retrato de Marina Corniani Marques Godoy" width="480" height="600"></figure>
+<figure class="retrato"><img src="/img/marina-corniani-marques-godoy.jpg" alt="Retrato de Marina Corniani Marques Godoy" width="480" height="600"></figure>
 </section>
 
 <section class="faixa cotas" aria-label="Destaques">
@@ -465,14 +465,15 @@ for a in ARTIGOS:
         "@type": "BlogPosting", "headline": a["titulo"], "description": a["resumo"], "url": BASE + path,
         "datePublished": a["data"] + "T09:00:00-04:00", "dateModified": HOJE_ISO, "inLanguage": "pt-BR", "keywords": a["tags"],
         "author": {"@id": f"{BASE}/#marina"}, "publisher": {"@id": f"{BASE}/#marina"},
-        "image": f"{BASE}/img/marina.jpg", "mainEntityOfPage": BASE + path}])
+        "image": f"{BASE}/img/marina-corniani-marques-godoy.jpg", "mainEntityOfPage": BASE + path}])
 
 # ---------------------------------------------------------------- arquivos para buscadores e IAs
 urls = ["/", "/sobre/", "/projetos/", "/livro/", "/artigos/"] + [f"/artigos/{a['slug']}/" for a in ARTIGOS]
 with open(os.path.join(OUT, "sitemap.xml"), "w", encoding="utf-8") as f:
-    f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+    f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n')
     for u in urls:
-        f.write(f"  <url><loc>{BASE}{u}</loc><lastmod>{HOJE}</lastmod></url>\n")
+        img = f"<image:image><image:loc>{BASE}/img/marina-corniani-marques-godoy.jpg</image:loc></image:image>" if u in ("/", "/sobre/") else ""
+        f.write(f"  <url><loc>{BASE}{u}</loc><lastmod>{HOJE}</lastmod>{img}</url>\n")
     f.write("</urlset>\n")
 
 with open(os.path.join(OUT, "robots.txt"), "w", encoding="utf-8") as f:
