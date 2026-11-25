@@ -126,3 +126,6 @@ h3 { font-size: 1.15rem; font-weight: 700; }
 .livro-destaque h2 { margin-bottom: 10px; }
 .livro-destaque p { max-width: 68ch; color: var(--tinta-2); margin: 0 0 10px; }
 .video .instagram-media { max-width: 400px !important; min-width: 0 !important; width: 100% !important; margin: 0 !important; }
+.foto-evento { margin: 0 0 24px; max-width: 420px; }
+.foto-evento img { width: 100%; border-radius: 2px; }
+.foto-evento figcaption { font-size: .9rem; color: var(--tinta-2); margin-top: 8px; }

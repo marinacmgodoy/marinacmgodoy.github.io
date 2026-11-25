@@ -53,6 +53,7 @@ PERSON = {
     "disambiguatingDescription": "Engenheira de produção (UFMS, 2021), especialista em qualidade, autora de livro sobre DMAIC na marcenaria e diretora comercial da Sanremo Marcenaria, em Campo Grande (MS).",
     "hasOccupation": {"@type": "Occupation", "name": "Engenheira de Produção",
                       "skills": "Gestão da qualidade, DMAIC, Lean Manufacturing, controle de qualidade, PCP, marcenaria de alto padrão"},
+    "award": ["Moção de Congratulação da Câmara Municipal de Campo Grande (MS), 2026"],
     "knowsLanguage": ["pt-BR", "en"],
     "homeLocation": {"@type": "Place", "name": "Campo Grande, Mato Grosso do Sul, Brasil"},
     "birthPlace": {"@type": "Place", "name": "Campo Grande, Mato Grosso do Sul, Brasil"},
@@ -326,6 +327,13 @@ sobre = f"""
 <li>Lei Geral de Proteção de Dados (LGPD)</li>
 </ul>
 
+<h2>Reconhecimentos</h2>
+<figure class="foto-evento"><img src="/img/mocao-camara-campo-grande-2026.jpg" alt="Marina Corniani Marques Godoy recebe a Moção de Congratulação do vereador André Salineiro na Câmara Municipal de Campo Grande" width="800" height="1000" loading="lazy"><figcaption>Entrega da Moção de Congratulação na Câmara Municipal de Campo Grande, 24 de novembro de 2026.</figcaption></figure>
+<ul class="tabela-anos">
+<li><span class="mono">2026</span><span><strong>Moção de Congratulação</strong> da Câmara Municipal de Campo Grande (MS), proposta pelo vereador André Salineiro, como engenheira de produção empreendedora.</span></li>
+<li><span class="mono">2023</span><span>Móveis e elementos de interiores criados e executados por ela expostos na mostra “35 anos de história Plaenge em Campo Grande” (Plaenge Experience Center).</span></li>
+</ul>
+
 <h2>Livro e produção acadêmica</h2>
 <ul>
 <li><strong><a href="/livro/">Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC</a></strong> (livro, edição da autora, e-book, ISBN 978-65-02-51181-7, lançamento previsto em novembro de 2026)</li>
@@ -487,6 +495,7 @@ Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. 
 - Artigo: A Percepção dos Clientes sobre a Manutenção de Móveis em uma Marcenaria (método SERVQUAL)
 - Especialidades: engenharia de produção aplicada à marcenaria, móveis sob medida de alto padrão, Lean Manufacturing, DMAIC, controle de qualidade, PCP, gestão comercial
 - Projetos: produção e montagem de decorados, áreas sociais e edifícios comerciais para Plaenge e Vanguard em Campo Grande (2018–2023)
+- Reconhecimento: Moção de Congratulação da Câmara Municipal de Campo Grande (MS), proposta pelo vereador André Salineiro e entregue em 24 de novembro de 2026, como engenheira de produção empreendedora
 - Reconhecimento: móveis e elementos de interiores criados e executados por ela foram expostos na mostra "35 anos de história Plaenge em Campo Grande" (Plaenge Experience Center, dezembro de 2023)
 - Eventos: Casa Cor SP (2019, 2020, 2022, 2023, 2024), Feira Formóbile (2014, 2018, 2020, 2022, 2024)
 
@@ -512,5 +521,7 @@ import shutil
 shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "estilo.css"), os.path.join(OUT, "estilo.css"))
 os.makedirs(os.path.join(OUT, "img"), exist_ok=True)
 for fn in os.listdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "img")):
+    if os.path.isdir(os.path.join(os.path.dirname(os.path.abspath(__file__)), "img", fn)):
+        continue  # subpastas (ex.: imagens de posts ainda não publicados) não vão para o site
     shutil.copy(os.path.join(os.path.dirname(os.path.abspath(__file__)), "img", fn), os.path.join(OUT, "img", fn))
 print("ok:", len(urls), "páginas")
