@@ -133,6 +133,20 @@ def page(path, title, desc, body, extra_ld=None, ogtype="website"):
 # ---------------------------------------------------------------- artigos
 ARTIGOS = [
     {
+        "slug": "mocao-camara-municipal-campo-grande",
+        "titulo": "Moção de Congratulação da Câmara Municipal de Campo Grande",
+        "resumo": "Recebi uma Moção de Congratulação da Câmara Municipal de Campo Grande (MS), proposta pelo vereador André Salineiro, como engenheira de produção empreendedora.",
+        "data": "2026-11-24",
+        "tags": ["Reconhecimento"],
+        "corpo": """
+<figure class="foto-evento"><img src="/img/mocao-camara-campo-grande-2026.jpg" alt="Marina Corniani Marques Godoy com o vereador André Salineiro, segurando a Moção de Congratulação" width="800" height="1000"><figcaption>Com o vereador André Salineiro na Câmara Municipal de Campo Grande, 24 de novembro de 2026.</figcaption></figure>
+<p>A entrega foi no dia 24 de novembro. É um reconhecimento que me deixa muito feliz, porque fala justamente do caminho que escolhi: levar a engenharia de produção para dentro da marcenaria. São mais de 12 anos na indústria de móveis sob medida aqui em Campo Grande, passando pelo administrativo, pela produção e pela direção comercial, sempre buscando mais método e mais qualidade no chão de fábrica.</p>
+<p>Obrigada ao vereador André Salineiro pela indicação.</p>
+<figure class="video-evento"><video controls playsinline preload="metadata" poster="/img/mocao-camara-campo-grande-2026-capa.jpg" width="576" height="1024"><source src="/img/mocao-camara-campo-grande-2026.mp4" type="video/mp4">Seu navegador não reproduz vídeo.</video><figcaption>Vídeo da sessão na Câmara Municipal de Campo Grande.</figcaption></figure>
+<p>E vem mais por aí: nos próximos dias sai meu livro, <a href="/livro/">Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC</a>, um guia prático de qualidade para o setor moveleiro. Conto tudo aqui no blog.</p>
+""",
+    },
+    {
         "slug": "dmaic-na-marcenaria",
         "titulo": "DMAIC na marcenaria: como aplicar o método passo a passo",
         "resumo": "Definir, Medir, Analisar, Melhorar e Controlar: como o ciclo do Seis Sigma resolve problemas reais de qualidade na fabricação de móveis sob medida.",
