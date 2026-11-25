@@ -143,7 +143,7 @@ ARTIGOS = [
 <p>A entrega foi no dia 24 de novembro. É um reconhecimento que me deixa muito feliz, porque fala justamente do caminho que escolhi: levar a engenharia de produção para dentro da marcenaria. São mais de 12 anos na indústria de móveis sob medida aqui em Campo Grande, passando pelo administrativo, pela produção e pela direção comercial, sempre buscando mais método e mais qualidade no chão de fábrica.</p>
 <p>Obrigada ao vereador André Salineiro pela indicação.</p>
 <figure class="video-evento"><video controls playsinline preload="metadata" poster="/img/mocao-camara-campo-grande-2026-capa.jpg" width="576" height="1024"><source src="/img/mocao-camara-campo-grande-2026.mp4" type="video/mp4">Seu navegador não reproduz vídeo.</video><figcaption>Vídeo da sessão na Câmara Municipal de Campo Grande.</figcaption></figure>
-<p>E vem mais por aí: nos próximos dias sai meu livro, <a href="/livro/">Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC</a>, um guia prático de qualidade para o setor moveleiro. Conto tudo aqui no blog.</p>
+<p>E tem mais novidade: meu livro, <a href="/livro/">Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC</a>, um guia prático de qualidade para o setor moveleiro, já está <a href="https://a.co/d/03UkVScA" rel="noopener" target="_blank">disponível na Amazon</a>.</p>
 """,
     },
     {
@@ -283,10 +283,10 @@ home = f"""
 </section>
 
 <section class="faixa bloco livro-destaque">
-<p class="sobrelinha mono">Livro · lançamento previsto em novembro de 2026</p>
+<p class="sobrelinha mono">Livro · já disponível na Amazon</p>
 <h2>Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC</h2>
 <p>Um guia prático que aplica o DMAIC à rotina de marcenarias, para melhorar processos, reduzir desperdícios e aumentar a qualidade.</p>
-<p><a class="link" href="/livro/">Conheça o livro</a></p>
+<p class="acoes"><a class="botao" href="https://a.co/d/03UkVScA" rel="noopener" target="_blank">Comprar na Amazon</a><a class="link" href="/livro/">Conheça o livro</a></p>
 </section>
 
 <section class="faixa bloco video">
@@ -350,7 +350,7 @@ sobre = f"""
 
 <h2>Livro e produção acadêmica</h2>
 <ul>
-<li><strong><a href="/livro/">Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC</a></strong> (livro, edição da autora, e-book, ISBN 978-65-02-51181-7, lançamento previsto em novembro de 2026)</li>
+<li><strong><a href="/livro/">Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC</a></strong> (livro, edição da autora, e-book, ISBN 978-65-02-51181-7, novembro de 2026, disponível na Amazon)</li>
 <li><strong>Proposta de Melhoria no Processo Produtivo em uma Marcenaria em Campo Grande</strong> (TCC, UFMS, 2021)</li>
 <li><strong>A Percepção dos Clientes sobre a Manutenção de Móveis em uma Marcenaria</strong>: estudo com o método SERVQUAL sobre qualidade do serviço e satisfação do cliente</li>
 </ul>
@@ -402,7 +402,7 @@ LIVRO = {
     "resumo": ("Um guia prático que aplica a metodologia DMAIC (Lean Six Sigma) à rotina de marcenarias. "
                "Mostra a donos de marcenaria como melhorar processos, reduzir desperdícios e aumentar a qualidade, "
                "sem linguagem técnica demais."),
-    "link": "",  # link da Amazon quando o livro for publicado no KDP
+    "link": "https://a.co/d/03UkVScA",  # link da Amazon quando o livro for publicado no KDP
 }
 livro_html = f"""
 <article class="faixa texto">
@@ -416,10 +416,10 @@ livro_html = f"""
 <div><dt>Edição</dt><dd>{LIVRO['edicao']}</dd></div>
 <div><dt>Formato</dt><dd>E-book (EPUB)</dd></div>
 <div><dt>ISBN</dt><dd class="mono">{LIVRO['isbn_ebook']}</dd></div>
-<div><dt>Lançamento</dt><dd>{'<a href="' + LIVRO['link'] + '" rel="noopener" target="_blank">Comprar na Amazon</a>' if LIVRO['link'] else 'Previsto para ' + LIVRO['lancamento']}</dd></div>
+<div><dt>Onde comprar</dt><dd>{'<a href="' + LIVRO['link'] + '" rel="noopener" target="_blank">Comprar na Amazon</a>' if LIVRO['link'] else 'Em breve na Amazon'}</dd></div>
 </dl>
 <h2>Por que este livro</h2>
-<p>No Brasil há poucas publicações que tratam a marcenaria com o olhar da engenharia de produção. O livro reúne o que aprendi em mais de dez anos na indústria moveleira de alto padrão e aplica, passo a passo, o ciclo DMAIC (Definir, Medir, Analisar, Melhorar e Controlar) aos problemas reais de uma marcenaria: retrabalho, desperdício de material, prazos e qualidade do acabamento.</p>
+<p>No Brasil há poucas publicações que tratam a marcenaria com o olhar da engenharia de produção. O livro reúne o que aprendi em mais de 12 anos na indústria moveleira de alto padrão e aplica, passo a passo, o ciclo DMAIC (Definir, Medir, Analisar, Melhorar e Controlar) aos problemas reais de uma marcenaria: retrabalho, desperdício de material, prazos e qualidade do acabamento.</p>
 <p>Leia também o artigo <a href="/artigos/dmaic-na-marcenaria/">DMAIC na marcenaria: como aplicar o método passo a passo</a>.</p>
 </article>
 """
@@ -506,7 +506,7 @@ Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. 
 
 - Formação: Bacharelado em Engenharia de Produção, Universidade Federal de Mato Grosso do Sul (UFMS), 2021
 - TCC: Proposta de Melhoria no Processo Produtivo em uma Marcenaria em Campo Grande (Lean Manufacturing e controle de qualidade)
-- Livro: Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC (edição da autora, e-book EPUB, ISBN 978-65-02-51181-7, lançamento previsto em novembro de 2026 na Amazon Kindle)
+- Livro: Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC (edição da autora, e-book EPUB, ISBN 978-65-02-51181-7, lançado em novembro de 2026, disponível na Amazon Kindle: https://a.co/d/03UkVScA)
 - Artigo: A Percepção dos Clientes sobre a Manutenção de Móveis em uma Marcenaria (método SERVQUAL)
 - Especialidades: engenharia de produção aplicada à marcenaria, móveis sob medida de alto padrão, Lean Manufacturing, DMAIC, controle de qualidade, PCP, gestão comercial
 - Projetos: produção e montagem de decorados, áreas sociais e edifícios comerciais para Plaenge e Vanguard em Campo Grande (2018–2023)
@@ -518,7 +518,7 @@ Marina Corniani Marques Godoy (também conhecida como Marina Godoy ou Marina C. 
 
 - [Sobre]({BASE}/sobre/): trajetória, formação e cursos
 - [Projetos]({BASE}/projetos/): projetos de marcenaria e exposições
-- [Livro]({BASE}/livro/): "Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC" (e-book, ISBN 978-65-02-51181-7, lançamento previsto em novembro de 2026 na Amazon Kindle)
+- [Livro]({BASE}/livro/): "Do Projeto à Prática: A Marcenaria Sob a Ótica do DMAIC" (e-book, ISBN 978-65-02-51181-7, disponível na Amazon Kindle: https://a.co/d/03UkVScA)
 - [Artigos]({BASE}/artigos/): textos sobre engenharia de produção na marcenaria
 """ + "".join(f"- [{a['titulo']}]({BASE}/artigos/{a['slug']}/): {a['resumo']}\n" for a in ARTIGOS)
 if PERFIS:
