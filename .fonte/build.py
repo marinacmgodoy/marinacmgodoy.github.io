@@ -134,7 +134,7 @@ def page(path, title, desc, body, extra_ld=None, ogtype="website"):
 ARTIGOS = [
     {
         "slug": "mocao-camara-municipal-campo-grande",
-        "titulo": "Moção de Congratulação da Câmara Municipal de Campo Grande",
+        "titulo": "Moção de Congratulação: engenheira de produção empreendedora",
         "resumo": "Recebi uma Moção de Congratulação da Câmara Municipal de Campo Grande (MS), proposta pelo vereador André Salineiro, como engenheira de produção empreendedora.",
         "data": "2026-11-24",
         "tags": ["Reconhecimento"],
